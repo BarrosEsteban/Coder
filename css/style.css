@@ -11,6 +11,7 @@
     justify-content: space-between; 
     font-size: 10px; 
     margin-right: 10px;
+
 }
 
 
@@ -109,8 +110,6 @@ body {
 
 
 .botonindex{
-    list-style: none;
-    display: flex;
     justify-content: flex-end;
 }
 .botonindex {
