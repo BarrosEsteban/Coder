@@ -1,0 +1,40 @@
+h1 {
+
+    .h1-index {
+        color: rgb(235, 79, 6);
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+
+        .grid-galeria {
+            width: 100%;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 250px;
+            gap: 15px;
+
+            .grid-item {
+                .primeritem {
+                    font-weight: bold;
+
+                    a {
+                        .grid.item {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                -webkit-box-shadow: 8px 8px 18px -3px rgba(3, 120, 191, 1);
+                                -moz-box-shadow: 8px 8px 18px -3px rgba(3, 120, 191, 1);
+                                box-shadow: 8px 8px 18px -3px rgba(3, 120, 191, 1);
+
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
