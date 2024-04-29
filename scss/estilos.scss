@@ -4,6 +4,17 @@
 @import "./componentes/main";
 @import "./componentes/footer";
 @import "./base/media";
+
+//BODY//
+body {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/y-so-serious-white.png);
+    font-size: medium;
+
+}
+
+
 //HEADER//
 
 .header {
@@ -45,20 +56,27 @@
     }
 }
 
+nav a:hover {
+    transform: scale(1.2);
+
+    transition: transform 0.3s ease;
+
+}
+
 @keyframes pulso {
 
-    
+
     100% {
-        transform: scale(1); 
+        transform: scale(1);
     }
 
     50% {
-        transform: scale(1.5); 
+        transform: scale(1.5);
     }
 }
 
 .logo {
-    animation: pulso 2s infinite; 
+    animation: pulso 2s infinite;
 }
 
 
@@ -115,6 +133,9 @@ main {
 
 }
 
+
+
+
 h2 {
     color: rgb(255, 115, 0);
 }
@@ -143,7 +164,11 @@ main {
 
     }
 }
-
+//iframe pages contacto//
+iframe {
+    height: 100%;
+    width: 100%;
+}
 
 
 //FOOTTER//
