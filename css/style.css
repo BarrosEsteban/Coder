@@ -18,11 +18,11 @@
 
 
 a.nav-link {
-    color: rgb(255, 81, 0);
+    color: rgb(250, 105, 8);
     
 }
 .navbar-nav .nav-link.active {
-    color: rgb(255, 81, 0);
+    color: rgb(250, 105, 8);
     
 }
 /*HEADER*/
@@ -105,17 +105,13 @@ body {
     font-weight: bold;
 }
 
-
-
-
-
 .botonindex{
     justify-content: flex-end;
 }
 .botonindex {
     font-weight: bolder;
     background-color: rgba(5, 220, 235, 0.247);
-    color: rgb(252, 75, 6);
+    color: rgb(5, 7, 172);
     font-size: 16px;
     border-radius: 20px;
     
@@ -123,15 +119,7 @@ body {
 
 
 
-.mep { color: rgb(226, 103, 3);}
 
-.atm {color: rgb(14, 219, 7);}
-
-.traumatologia {
-    color: blue;
-}
-
-.puncion { color: rgb(88, 4, 167);}
 
 /*PESTAÑA TRATAMIENTOS*/
 
@@ -168,7 +156,7 @@ footer img {
     
     /*media query inicio*/
 
-    /* Estilos para dispositivos móvile */
+    /* mobile */
     @media screen and (min-width: 250px) and (max-width: 800px) {
     .grid-galeria {
         grid-template-columns: 1fr; 
@@ -184,7 +172,7 @@ footer img {
     }
 }
 
-/* Estilos para tablets */
+/* tablets */
 @media screen and (min-width: 805px) and (max-width: 1024px) {
     .grid-galeria {
         grid-template-columns: repeat(2, 1fr); 

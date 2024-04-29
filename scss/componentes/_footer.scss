@@ -1,0 +1,26 @@
+
+footer {
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .wsp {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        right: 0;
+        top: 90%;
+        transform: translateY(-50%);
+    }
+
+    .jbarrosfooter {
+        color: blanchedalmond
+    }
+}

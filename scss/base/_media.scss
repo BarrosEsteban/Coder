@@ -1,0 +1,20 @@
+@media screen and (min-width: 250px) and (max-width: 800px) {
+    .grid-galeria {
+        grid-template-columns: 1fr; 
+    }
+
+    .banner, .grid-galeria div img {
+        height: auto;
+    }
+
+    .wsp {
+        right: 1rem;
+        top: 95%;
+    }
+}
+
+@media screen and (min-width: 805px) and (max-width: 1024px) {
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
