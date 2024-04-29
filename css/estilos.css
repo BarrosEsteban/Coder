@@ -122,6 +122,18 @@ footer .jbarrosfooter {
   width: 100%;
 }
 
+@keyframes pulso {
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.logo {
+  animation: pulso 2s infinite;
+}
+
 .banner {
   height: 100%;
   width: 100%;

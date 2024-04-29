@@ -27,6 +27,7 @@
         .navbar-collapse {
             ul.navbar-nav {
                 color: rgb(250, 105, 8);
+
                 li.nav-item {
                     a.nav-link {
                         color: rgb(245, 115, 8);
@@ -44,10 +45,27 @@
     }
 }
 
+@keyframes pulso {
+
+    
+    100% {
+        transform: scale(1); 
+    }
+
+    50% {
+        transform: scale(1.5); 
+    }
+}
+
+.logo {
+    animation: pulso 2s infinite; 
+}
+
+
 .banner {
     height: 100%;
     width: 100%;
-    
+
 }
 
 
@@ -107,7 +125,7 @@ h3 {
 
 p {
     font-family: 'Playfair Display', serif;
-            font-size: 20px
+    font-size: 20px
 }
 
 main {
@@ -122,21 +140,10 @@ main {
             font-size: 20px
         }
 
-        
+
     }
 }
 
 
 
 //FOOTTER//
-
-
-
-
-
-
-
-
-
-
-
