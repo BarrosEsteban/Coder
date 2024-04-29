@@ -54,7 +54,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-    object-fit: cover;
+     object-fit: cover;
   box-shadow: 8px 8px 18px -3px rgb(3, 120, 191);
   -webkit-box-shadow: 8px 8px 18px -3px rgb(3, 120, 191);
   -moz-box-shadow: 8px 8px 18px -3px rgb(3, 120, 191);
@@ -118,6 +118,11 @@ footer .jbarrosfooter {
   color: rgb(245, 115, 8);
 }
 .header nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link img .banner {
+  height: 100%;
+  width: 100%;
+}
+
+.banner {
   height: 100%;
   width: 100%;
 }
