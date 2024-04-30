@@ -78,6 +78,7 @@ footer .wsp {
   right: 0;
   top: 90%;
   transform: translateY(-50%);
+  animation: pulso 2s infinite;
 }
 footer .jbarrosfooter {
   color: blanchedalmond;
@@ -139,7 +140,7 @@ nav a:hover {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 .logo {
