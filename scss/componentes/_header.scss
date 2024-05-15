@@ -2,25 +2,32 @@
     nav {
         .navbar-expand-lg {
             background-image: url(../img/y-so-serious-white.png);
+            
 
-            img .logo {
-                height: 50px;
-                width: 50px;
+            .container-fluid {
+                display: flex; 
+                justify-content: space-between; 
+                align-items: center; 
 
-            }
+                .navbar-brand {
+                    display: flex;
+                    align-items: center; 
 
-            div .container-fluid {
-
-                font-size: 10px;
-                margin-right: 10px;
+                    img.logo {
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
             }
         }
 
         .navbar-collapse {
             ul.navbar-nav {
+                color: rgb(250, 105, 8);
+
                 li.nav-item {
                     a.nav-link {
-                        color: rgb(255, 81, 0);
+                        color: rgb(245, 115, 8);
 
                         img .banner {
                             height: 100%;
@@ -35,3 +42,32 @@
     }
 }
 
+nav a:hover {
+    transform: scale(1.2);
+
+    transition: transform 0.3s ease;
+
+}
+
+@keyframes pulso {
+
+
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.logo {
+    animation: pulso 2s infinite;
+}
+
+
+.banner {
+    height: 100%;
+    width: 100%;
+
+}

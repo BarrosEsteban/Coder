@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
 * {
   margin: 5px;
   padding: 0;
@@ -7,18 +8,48 @@
 .header nav .navbar-expand-lg {
   background-image: url(../img/y-so-serious-white.png);
 }
-.header nav .navbar-expand-lg img .logo {
+.header nav .navbar-expand-lg .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav .navbar-expand-lg .container-fluid .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.header nav .navbar-expand-lg .container-fluid .navbar-brand img.logo {
   height: 50px;
   width: 50px;
 }
-.header nav .navbar-expand-lg div .container-fluid {
-  font-size: 10px;
-  margin-right: 10px;
+.header nav .navbar-collapse ul.navbar-nav {
+  color: rgb(250, 105, 8);
 }
 .header nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
-  color: rgb(255, 81, 0);
+  color: rgb(245, 115, 8);
 }
 .header nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link img .banner {
+  height: 100%;
+  width: 100%;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+@keyframes pulso {
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.logo {
+  animation: pulso 2s infinite;
+}
+
+.banner {
   height: 100%;
   width: 100%;
 }
@@ -60,12 +91,122 @@
   -moz-box-shadow: 8px 8px 18px -3px rgb(3, 120, 191);
 }
 
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+}
+input:hover,
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #0667e6;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #0667e6;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #0667e6;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #0667e6;
+}
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #0667e6;
+}
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: #0667e6;
+}
+
+input {
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px;
+  border-bottom: none;
+}
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  border: solid 1px #b3aca7;
+}
+
+#submit {
+  width: 470px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  color: #0667e6;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+#submit:hover {
+  color: #e2dedb;
+}
+
+input::-webkit-input-placeholder, input::-moz-placeholder, input::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+input:hover::-webkit-input-placeholder, input:hover::-moz-placeholder, input:hover::-ms-placeholder {
+  color: #e2dedb;
+}
+input:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, input:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+input:hover:focus::-webkit-input-placeholder, input:hover:focus::-moz-placeholder, input:hover:focus::-ms-placeholder {
+  color: #cbc6c1;
+}
+
 footer {
-  background-color: black;
+  background-color: rgba(5, 220, 235, 0.247);
   text-align: center;
   position: relative;
   bottom: 0;
   width: 100%;
+  padding: 20px 0;
+  color: rgb(252, 75, 6);
+  font-family: "Arial", sans-serif;
+}
+footer .contact-title {
+  font-size: 1;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer .contact-info {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-align: left;
+}
+footer .contact-info .mail,
+footer .contact-info .celu,
+footer .contact-info .direccion {
+  display: block;
+  color: rgb(252, 75, 6);
+  margin: 5px 0;
+  font-size: 0.9em;
 }
 footer img {
   height: 30px;
@@ -75,15 +216,28 @@ footer .wsp {
   height: 50px;
   width: 50px;
   position: fixed;
-  right: 0;
-  top: 90%;
+  right: 20px;
+  bottom: 20px;
   transform: translateY(-50%);
   animation: pulso 2s infinite;
+  z-index: 1000;
 }
 footer .jbarrosfooter {
-  color: blanchedalmond;
+  color: rgb(252, 75, 6);
+  margin-top: 10px;
 }
 
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 250px) and (max-width: 800px) {
   .grid-galeria {
     grid-template-columns: 1fr;
@@ -106,50 +260,6 @@ body {
   min-height: 100vh;
   background-image: url(../img/y-so-serious-white.png);
   font-size: medium;
-}
-
-.header nav .navbar-expand-lg {
-  background-image: url(../img/y-so-serious-white.png);
-}
-.header nav .navbar-expand-lg img .logo {
-  height: 50px;
-  width: 50px;
-}
-.header nav .navbar-expand-lg div .container-fluid {
-  font-size: 10px;
-  margin-right: 10px;
-}
-.header nav .navbar-collapse ul.navbar-nav {
-  color: rgb(250, 105, 8);
-}
-.header nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
-  color: rgb(245, 115, 8);
-}
-.header nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link img .banner {
-  height: 100%;
-  width: 100%;
-}
-
-nav a:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
-}
-
-@keyframes pulso {
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-.logo {
-  animation: pulso 2s infinite;
-}
-
-.banner {
-  height: 100%;
-  width: 100%;
 }
 
 main .h1-index {
