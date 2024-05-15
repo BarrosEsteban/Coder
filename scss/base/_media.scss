@@ -11,10 +11,51 @@
         right: 1rem;
         top: 95%;
     }
+
+footer {
+    .contact-info {
+        position: static; 
+        margin: 0 auto; 
+        padding: 10px; 
+        text-align: center; 
+
+        .mail,
+        .celu,
+        .direccion {
+            font-size: 0.8em; 
+        }
+    }
+
+    .wsp {
+        position: static; 
+        margin: 10px auto; 
+        display: block; 
+    }
+}
 }
 
 @media screen and (min-width: 805px) and (max-width: 1024px) {
     .grid-galeria {
         grid-template-columns: repeat(2, 1fr); 
+    }
+}
+footer {
+    .contact-info {
+        position: static; 
+        margin: 0 auto; 
+        padding: 10px; 
+        text-align: center; 
+
+        .mail,
+        .celu,
+        .direccion {
+            font-size: 0.8em; 
+        }
+    }
+
+    .wsp {
+        position: static; 
+        margin: 10px auto; 
+        display: block; 
     }
 }

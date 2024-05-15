@@ -249,12 +249,45 @@ footer .jbarrosfooter {
     right: 1rem;
     top: 95%;
   }
+  footer .contact-info {
+    position: static;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+  footer .contact-info .mail,
+  footer .contact-info .celu,
+  footer .contact-info .direccion {
+    font-size: 0.8em;
+  }
+  footer .wsp {
+    position: static;
+    margin: 10px auto;
+    display: block;
+  }
 }
 @media screen and (min-width: 805px) and (max-width: 1024px) {
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+footer .contact-info {
+  position: static;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+footer .contact-info .mail,
+footer .contact-info .celu,
+footer .contact-info .direccion {
+  font-size: 0.8em;
+}
+footer .wsp {
+  position: static;
+  margin: 10px auto;
+  display: block;
+}
+
 body {
   position: relative;
   min-height: 100vh;
