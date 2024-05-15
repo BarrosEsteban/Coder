@@ -39,6 +39,8 @@ footer {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
+
+
 footer {
     .contact-info {
         position: static; 
@@ -54,8 +56,7 @@ footer {
     }
 
     .wsp {
-        position: static; 
-        margin: 10px auto; 
-        display: block; 
+        right: 1rem;
+        top: 88%;
     }
 }

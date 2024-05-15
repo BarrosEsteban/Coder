@@ -283,9 +283,8 @@ footer .contact-info .direccion {
   font-size: 0.8em;
 }
 footer .wsp {
-  position: static;
-  margin: 10px auto;
-  display: block;
+  right: 1rem;
+  top: 88%;
 }
 
 body {
